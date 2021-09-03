@@ -104,5 +104,28 @@ namespace QLCHQuanAo
                 MessageBox.Show(ex.Message);
             }
         }
+
+        void DatlaiMK(string tenht)
+        {
+            if (TaiKhoanDAO.Instance.datLaiMatKhau(tenht))
+            {
+                MessageBox.Show("đặt lại mật khẩu tài khoản thành công");
+            }
+            else
+                MessageBox.Show("Không đặt lại được mật khẩu, vui lòng kiểm tra lại", "thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void btnDatLaiMK_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string tenht = txtTenTK.Text;
+                DatlaiMK(tenht);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

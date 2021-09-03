@@ -44,12 +44,12 @@ namespace QLCHQuanAo
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnXem = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.nmLoai = new System.Windows.Forms.NumericUpDown();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnDatLaiMK = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTaiKhoan)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -187,7 +187,7 @@ namespace QLCHQuanAo
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.nmLoai);
-            this.panel4.Controls.Add(this.button4);
+            this.panel4.Controls.Add(this.btnDatLaiMK);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.label1);
@@ -197,6 +197,24 @@ namespace QLCHQuanAo
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(366, 330);
             this.panel4.TabIndex = 8;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(35, 251);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(117, 13);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "_Mật khẩu mặc định: 0";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(4, 228);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(234, 13);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Note: _loại TK (người quản trị :0 _ nhân viên : 1)";
             // 
             // nmLoai
             // 
@@ -210,14 +228,15 @@ namespace QLCHQuanAo
             this.nmLoai.Size = new System.Drawing.Size(248, 20);
             this.nmLoai.TabIndex = 2;
             // 
-            // button4
+            // btnDatLaiMK
             // 
-            this.button4.Location = new System.Drawing.Point(264, 146);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(82, 64);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Đặt lại mật khẩu";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnDatLaiMK.Location = new System.Drawing.Point(264, 146);
+            this.btnDatLaiMK.Name = "btnDatLaiMK";
+            this.btnDatLaiMK.Size = new System.Drawing.Size(82, 64);
+            this.btnDatLaiMK.TabIndex = 0;
+            this.btnDatLaiMK.Text = "Đặt lại mật khẩu";
+            this.btnDatLaiMK.UseVisualStyleBackColor = true;
+            this.btnDatLaiMK.Click += new System.EventHandler(this.btnDatLaiMK_Click);
             // 
             // label3
             // 
@@ -238,24 +257,6 @@ namespace QLCHQuanAo
             this.label4.Size = new System.Drawing.Size(168, 20);
             this.label4.TabIndex = 9;
             this.label4.Text = "QUẢN LÝ TÀI KHOẢN";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(4, 228);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(234, 13);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Note: _loại TK (người quản trị :0 _ nhân viên : 1)";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(35, 251);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(117, 13);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "_Mật khẩu mặc định: 0";
             // 
             // fQLTaiKhoan
             // 
@@ -293,7 +294,7 @@ namespace QLCHQuanAo
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnDatLaiMK;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenHienThi;

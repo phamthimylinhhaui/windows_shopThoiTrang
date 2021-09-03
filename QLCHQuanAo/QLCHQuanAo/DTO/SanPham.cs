@@ -32,6 +32,7 @@ namespace QLCHQuanAo.DTO
             this.soLuong = (int)row["soLuong"];
         }
 
+
         public string MaSP { get => maSP; set => maSP = value; }
         public string TenSP { get => tenSP; set => tenSP = value; }
         public int MaDM { get => maDM; set => maDM = value; }

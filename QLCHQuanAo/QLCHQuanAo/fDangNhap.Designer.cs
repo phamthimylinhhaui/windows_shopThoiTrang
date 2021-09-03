@@ -87,7 +87,7 @@ namespace QLCHQuanAo
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(205, 20);
             this.txtMatKhau.TabIndex = 2;
-            this.txtMatKhau.Text = "123";
+            this.txtMatKhau.Text = "321";
             this.txtMatKhau.UseSystemPasswordChar = true;
             // 
             // txtTenDangNhap
@@ -96,7 +96,7 @@ namespace QLCHQuanAo
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.Size = new System.Drawing.Size(205, 20);
             this.txtTenDangNhap.TabIndex = 1;
-            this.txtTenDangNhap.Text = "admin";
+            this.txtTenDangNhap.Text = "staff";
             // 
             // btnDangNhap
             // 

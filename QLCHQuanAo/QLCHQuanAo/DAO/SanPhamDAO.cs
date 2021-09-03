@@ -36,7 +36,9 @@ namespace QLCHQuanAo.DAO
             }
             return lsp;
         }
-        
+
+       
+
         public bool ThemSP(string tensp, int madm, double gia, int soluong)
         {
             string query = string.Format("INSERT dbo.SANPHAM (tenSP, maDM, gia, soLuong) VALUES (N'{0}', {1}, {2}, {3})", tensp, madm, gia, soluong);

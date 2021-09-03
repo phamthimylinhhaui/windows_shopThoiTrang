@@ -56,5 +56,13 @@ namespace QLCHQuanAo.DAO
             int kq = DataProvider.Instance.ExecuteNoQuery(query);
             return kq > 0;
         }
+
+        // cập nhật lại mật khẩu
+        public bool datLaiMatKhau(string tenht)
+        {
+            string query = string.Format("UPDATE TAIKHOAN SET matKhau = N'0' WHERE tenHienThiNV = N'{0}' ", tenht);
+            int kq = DataProvider.Instance.ExecuteNoQuery(query);
+            return kq > 0;
+        }
     }
 }

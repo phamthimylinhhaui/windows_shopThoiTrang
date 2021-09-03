@@ -25,7 +25,7 @@ namespace QLCHQuanAo.DAO
         }
 
 
-        private string connstring = @"Data Source=DESKTOP-1EE6NGN\SQLEXPRESS02;Initial Catalog=QLShopQuanAo;Integrated Security=True";
+        private string connstring = @"Data Source=DESKTOP-1EE6NGN\SQLEXPRESS02;Initial Catalog=QLShopThoiTrang;Integrated Security=True";
 
         // thuc hien lenh select tra ve bang dl
         public DataTable ExecuteQuery(string query, object[] parameter =null)//parameter co the null
